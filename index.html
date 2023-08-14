@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Marker</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container pt-2">
+        <h1 class="pb-3 text-muted">Book Marker</h1>
+        <hr>
+    <div class="form-project text-center my-5 py-4 rounded-3">
+        <h2>Bookmark Your Favorite Site</h2>
+
+    <div class="form-group mx-5">
+        <label class="text-center fw-bold p-2 ">Site Name</label>
+        <input id="name" type="text" class="form-control" placeholder="Bookmark Name">
+    </div>
+    <div class="form-group mx-5">
+        <label class="text-center fw-bold p-2">Site url</label>
+        <input id="url" type="text" class="form-control" placeholder="Website url">
+    </div>
+    <button  id="addBtn" disabled class="btn btn-primary m-3">Submit</button>
+    </div>
+    <input onclick="update(i)" onkeyup="search(this.value)" class="my-3 form-control" placeholder="Search by bookmark name">
+    <div class="output">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <hr>
+    <footer>
+        <h6 class="text-muted">&copy;2019 bookmarker inc.</h6>
+    </footer>
+</div>
+
+    
+
+
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
